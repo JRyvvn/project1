@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirley - A New World</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        a {
+            color: black; /* 글자 색을 검은색으로 변경 */
+            text-decoration: none; /* 밑줄 제거 */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_top">
+            <!-- <div class="logo"> -->
+            <img src="logoshirley.avif" alt="Shide Logo" />
+            <!-- </div> -->
+        <div class="search-bar">
+        <input type="text" placeholder="Search out store">
+        <button class="search-btn">🔍</button>
+        </div>  
+    
+        <div class="user-options">
+                    <button class="icon-btn cart-btn" aria-label="Cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M6 6H21L20 12H8L6 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="10" cy="19" r="1.5" fill="currentColor"/>
+                            <circle cx="18" cy="19" r="1.5" fill="currentColor"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+    
+                    <button class="icon-btn settings-btn" aria-label="Settings">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 15.5A3.5 3.5 0 1 0 12 8.5a3.5 3.5 0 0 0 0 7z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06A2 2 0 1 1 4.28 16.9l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09c.67 0 1.25-.4 1.51-1a1.65 1.65 0 0 0-.33-1.82l-.06-.06A2 2 0 1 1 7.17 4.28l.06.06c.44.44 1.04.66 1.62.56.5-.09 1-.09 1.5 0 .58.1 1.18-.12 1.62-.56l.06-.06A2 2 0 1 1 16.9 4.28l-.06.06c-.44.44-.66 1.04-.56 1.62.09.5.09 1 0 1.5-.1.58.12 1.18.56 1.62l.06.06A2 2 0 1 1 19.4 9v.09c0 .67.4 1.25 1 1.51h.09a2 2 0 1 1 0 4h-.09c-.67 0-1.25.4-1.51 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <header>
+        <div class="header_top2"> 
+            <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Books</a>
+                    <a href="#">Magazines</a>
+                    <a href="#">Recomended</a>
+                    <a href="#">Sale</a>
+                    <a href="#">Pages</a>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+    <>
+  
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            });
+            </script>
+
+            <!-- // 아이콘과 글씨들 -->
+      
+            <div display: block;
+                unicode-bidi: isolate;
+                id="shopify-section-template--14161326997540__service" class="shopify-section"><div class="feature-area" id="section-template--14161326997540__service">
+            <div class="container-icon">
+            <div class="row"><div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-feature mb-40"><div class="feature-icon"><img src="//shirley-demo.myshopify.com/cdn/shop/files/icon01_small.png?v=1613553605" alt=""></div><div class="feature-content"><h4 style="color: ">Quick Delivery</h4><p style="color: ">Most product are free<br>shipping.</p></div>
+            </div>
+            </div><div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-feature mb-40"><div class="feature-icon"><img src="//shirley-demo.myshopify.com/cdn/shop/files/icon02_small.png?v=1613553605" alt=""></div><div class="feature-content"><h4 style="color: ">Pay with Easy</h4><p style="color: ">Most product are free<br>shipping.</p></div>
+            </div>
+            </div><div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-feature mb-40"><div class="feature-icon"><img src="//shirley-demo.myshopify.com/cdn/shop/files/icon03_small.png?v=1613553605" alt=""></div><div class="feature-content"><h4 style="color: ">Best Deal</h4><p style="color: ">Most product are free<br>shipping.</p></div>
+            </div>
+            </div><div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-feature mb-40"><div class="feature-icon"><img src="//shirley-demo.myshopify.com/cdn/shop/files/icon04_small.png?v=1613553605" alt=""></div><div class="feature-content"><h4 style="color: ">Secured Payment</h4><p style="color: ">Most product are free<br>shipping.</p></div>
+            </div>
+            </div></div>
+            </div>
+            </div><style data-shopify="">#section-template--14161326997540__service{padding-top: 80px;
+                padding-bottom: 35px;}
+            @media (min-width: 768px) and (max-width: 991px) {
+                #section-template--14161326997540__service{padding-top: 60px;
+                padding-bottom: 25px;}
+            }
+            @media (max-width: 767px) {
+                #section-template--14161326997540__service{padding-top: 50px;
+                padding-bottom: 30px;}
+            }</style><style data-shopify="">
+            #section-template--14161326997540__service .single-feature .feature-content h4::before {
+                background-color: #242424;
+            }
+            </style>
+            </div>
+       
+            
+
+            <!-- 할인과 아이사진 -->
+        
+        <section class="product-grid-2">
+            <img src="./img/Untitled-1_703368e4-8b89-48eb-832e-13c3d740cf28.jpg" alt="할인 이미지" loading="lazy">
+            <img src="./img/banner02.jpg" alt="프로모션 배너 이미지">
+            
+        </section>
+
+
+        <section class="flash-sale-offer">
+            
+        </section>
+        
+
+
+<!-- sliderbooks -->
+
+        <section class="slider-books">
+            <div class="book-image">
+                <img src="https://via.placeholder.com/300x450" alt="A New World">
+            </div>
+            <div class="book-details">
+                <h3>A New World</h3>
+                <p>Description of the book...</p>
+                <span>$17.00</span>
+            </div>
+        </section>
+        
+        <section class="similar-books">
+            </section>
+
+
+
+<!-- most popular -->
+
+            
+        <section class="most-popular-book">
+            
+        </section>
+
+
+
+
+
+
+
+<!-- countdown slider(up-to-off) -->
+
+            
+        <section class="up-to-off">
+            
+        </section>
+
+
+
+
+
+
+
+<!-- limited time offer -->
+
+            
+        <section class="limited-time-offer">
+            
+        </section>
+
+
+
+
+
+
+
+
+<!-- review-section -->
+
+            
+        <section class="review-section">
+            
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- latest blogs -->
+
+
+        <section class="latest-blogs">
+            <h2>LATEST BLOGS</h2>
+            <div class="blog-posts">
+                </div>
+        </section>
+    
+
+
+
+
+
+
+
+<!-- footer -->
+        <section class="footer">       
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+</body>
+
+</html>

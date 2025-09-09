@@ -1,0 +1,555 @@
+
+/* General Body Styles */
+.body {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+    min-height: 100vh; /* 전체 화면 높이 */
+}
+/* Header */
+.header {
+    display: flex;
+    background-color: #ffffff; /* */
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    justify-content: center; 
+    width: 100%;
+}
+.header_top {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1120px; /* 반응형 폭 적용 */
+    padding: 0 20px;   /* 작은 화면에서 여백 확보 */
+    box-sizing: border-box;
+    min-height: 70px;
+}
+/* ...existing code... */
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    height: 70px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+/* 검색바 기본 정렬 보정 (선택) */
+.search-bar {
+    display: flex;
+    height: 12px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.search-bar input {
+    padding: 20px 200px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.search-bar button {
+    padding: 17px 40px;
+    border: none;
+    background: rgb(98, 171, 0);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* 오른쪽 유저 옵션 (카트 + 설정) */
+.user-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 아이콘 버튼 공통 */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 6px;
+    cursor: pointer;
+    color: #140b0b;
+    padding: 6px;
+}
+.icon-btn svg {
+    display: block;
+}
+.icon-btn:focus { outline: 2px solid rgba(20,11,11,0.15); outline-offset: 2px; }
+
+/* 장바구니 카운트 */
+.cart-count {
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    background: #e53935;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 999px;
+    margin-left: 6px;
+}
+
+/* 작은 화면에서 여백 최적화 */
+@media (max-width: 600px) {
+    .search-bar { flex: 1 1 auto; min-width: 0; }
+    .header_top { gap: 8px; padding: 0 8px; }
+    .icon-btn { width: 36px; height: 36px; padding: 4px; }
+    .cart-count { min-width: 16px; height: 16px; font-size: 11px; line-height: 16px; margin-left: 4px; }
+}
+
+/* ...existing code... */
+.header_top2 {
+    position: sticky;
+    top: 0;
+    z-index: 1120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;           /* max-width 제거하고 full width */
+    padding: 0 19px;
+    box-sizing: border-box;
+    margin: 0;             /* margin: 0 auto 제거 */
+    min-height: 50px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+}
+/* ...existing code... */
+
+.header_top2 nav a{
+    margin: 0 40px;
+    box-sizing: border-box;
+    width:100%;
+
+}
+
+
+.header_top .logo {
+    font-size: 30px;
+    font-weight: bold;
+    width:70px; height:35px; background-color:black;
+}
+.header_top .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #140b0b;
+}
+
+/* Yoga Lesson Section */
+
+.swiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 460px;
+}
+
+/* Product Grids */
+
+
+.container-icon {
+    height:250px;
+    margin-top: -50px;
+}
+
+
+
+
+
+
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Bootstrap 그리드 시스템 재현 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* 음수 마진으로 패딩 상쇄 */
+}
+
+/* Bootstrap 컬럼 클래스들 */
+.col-lg-3,
+.col-md-6,
+.col-sm-6 {
+    padding: 0 15px; /* 양옆 여백 */
+}
+
+/* Large 화면 (992px 이상) */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%; /* 4분의 1 너비 */
+        max-width: 25%;
+    }
+}
+
+/* Medium 화면 (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        flex: 0 0 50%; /* 절반 너비 */
+        max-width: 50%;
+    }
+}
+
+/* Small 화면 (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .col-sm-6 {
+        flex: 0 0 50%; /* 절반 너비 */
+        max-width: 50%;
+    }
+}
+
+/* Extra Small 화면 (575px 이하) */
+@media (max-width: 575px) {
+    .col-lg-3,
+    .col-md-6,
+    .col-sm-6 {
+        flex: 0 0 100%; /* 전체 너비 */
+        max-width: 100%;
+    }
+}
+
+/* Feature Area 스타일 */
+.feature-area {
+    padding: 80px 0 35px;
+    background-color: #f8f9fa; /* 선택사항 */
+}
+
+/* Medium 화면에서 padding 조정 */
+@media (min-width: 1120px) and (max-width: 991px) {
+    .feature-area {
+        padding: 60px 0 25px;
+    }
+}
+
+/* Small 화면에서 padding 조정 */
+@media (max-width: 1120px) {
+    .feature-area {
+        padding: 50px 0 30px;
+    }
+}
+
+/* Single Feature 스타일 */
+.single-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.single-feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Margin Bottom 유틸리티 */
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    padding: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%   ;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Feature Content */
+.feature-content {
+    text-align: center;
+}
+
+.feature-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    position: relative;
+}
+
+/* Shopify 원본에 있던 ::before 스타일 */
+.feature-content h4::before {
+    content: "";
+    background-color: #242424;
+    /* 필요에 따라 추가 스타일링 */
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.feature-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Shopify Section 기본 스타일 */
+.shopify-section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* 각 피처별 아이콘 배경색 (선택사항) */
+.single-feature:nth-child(1) .feature-icon {
+    background-color: #e8f5e8; /* 초록 */
+}
+
+.single-feature:nth-child(2) .feature-icon {
+    background-color: #e3f2fd; /* 파랑 */
+}
+
+.single-feature:nth-child(3) .feature-icon {
+    background-color: #f3e5f5; /* 보라 */
+}
+
+.single-feature:nth-child(4) .feature-icon {
+    background-color: #fff3e0; /* 주황 */
+}
+
+/* 반응형에서 간격 조정 */
+@media (max-width: 767px) {
+    .mb-40 {
+        margin-bottom: 30px;
+    }
+    
+    .single-feature {
+        padding: 25px 15px;
+    }
+    
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Body 기본 폰트 (선택사항) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+/* 할인 아이사진파트 */
+
+.product-grid-2 { 
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.product-grid-3 { background-color: #f0e0ff; }
+
+
+/* dffdfd */
+/* dfdfdf */
+
+
+
+
+/* /* .flash-sale-offer */
+.flash-sale-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ffc0cb;
+    height:300px;
+}
+
+.featured-book img {
+    max-width: 300px;
+    margin-right: 50px;
+}
+
+/* Slider Books Section */
+.slider-books {
+    padding: 50px;
+    background-color: #c0c0ff;
+}
+
+/* most-popular-book*/
+.most-popular-book {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #d3d3d3; /* */
+}
+
+
+
+
+
+
+/* 카운트다운의 슬라이더 (up to 500% off)*/
+
+
+
+.countdown {
+    display: flex;
+    gap: 15px;
+}
+.time-box {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.time-box span {
+    display: block;
+    font-size: 2em;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2em;
+}
+
+
+ /* up to 50% off */
+
+
+.up-to-off {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ffc0cb;
+    height:300px;   
+
+
+}
+
+
+
+/* limited-time-offer */
+.limited-time-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #01d4db;
+    height:300px;   
+
+
+}
+
+
+
+
+
+/* review section */
+.review-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #0741e3;
+    height:300px;   
+
+
+
+}
+
+
+
+
+
+
+
+/* latest blogs */
+.latest-blogs {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #4e05b5;
+    height:300px;   
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #51020f;
+    height:300px;   
+}
+
